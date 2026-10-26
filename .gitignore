@@ -1,0 +1,53 @@
+# --- Secrets and local state -------------------------------------------------
+.env
+.env.local
+*.pem
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# --- Node / frontend --------------------------------------------------------
+node_modules/
+frontend/dist/
+frontend/.vite/
+web/dist/
+web/.vite/
+npm-debug.log*
+yarn-error.log*
+
+# --- Runtime data: uploads, extracted text, generated audio, databases -------
+var/
+!var/.gitkeep
+data/audio/
+!data/audio/static/
+data/previews/
+data/works/
+data/voices/
+*.db
+*.sqlite3
+
+# --- Editors / OS -----------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# keep hidden
+misc_files/
+lessons/
+plans/
+spec/
+bugs/
+enhancement_plans/
+scratch*.py
+scratch/
+.kilo/
